@@ -27,11 +27,11 @@ http and https sites, but if you're embedding this into a local web page (file p
 you should add an explicit protocol (https if you're using voyant-tools.org, otherwise
 it depends on this server.
 Feel free to change the height and width values or other styling below: -->
-<iframe style='width: 599px; height: 320px;' src='https://voyant-tools.org/tool/DreamScape/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'></iframe>
+<iframe style='width: 599px; height: 320px;' src='https://voyant-tools.org/tool/DreamScape/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'><\iframe>
 <!--	Exported from Voyant Tools (voyant-tools.org).
 The iframe src attribute below uses a relative protocol to better function with both
 http and https sites, but if you're embedding this into a local web page (file protocol)
 you should add an explicit protocol (https if you're using voyant-tools.org, otherwise
 it depends on this server.
 Feel free to change the height and width values or other styling below: -->
-<iframe style='width: 499px; height: 323px;' src='https://voyant-tools.org/tool/TermsBerry/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'></iframe>
+<iframe style='width: 499px; height: 323px;' src='https://voyant-tools.org/tool/TermsBerry/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'><\iframe>
