@@ -35,3 +35,8 @@ you should add an explicit protocol (https if you're using voyant-tools.org, oth
 it depends on this server.
 Feel free to change the height and width values or other styling below: -->
 <iframe style='width: 499px; height: 323px;' src='https://voyant-tools.org/tool/TermsBerry/?corpus=ea1868d7f1fbece8f0f5538c23a3128e'></iframe>
+
+- finding it difficult to interpret patters when I do not have an idea in mind
+
+## AntConc
+- corpus constrution: questions of sampling, representiveness, and organization
