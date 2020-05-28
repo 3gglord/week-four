@@ -31,3 +31,20 @@
 
 ## AntConc
 - corpus constrution: questions of sampling, representiveness, and organization
+- I really like the Collocate feature
+- allows for a far reading before looking at the words in context
+- I can imagine how the process can take a long time because researchers have to clearn the OCR'd text and then select which files they're going to examine 
+- the paterns that come up may take a long time to go through as well
+- How do the chapbooks write about women compared to men? 
+- What kind of writing do chapbooks produce about women?
+- expecting there to be less mention of women than men, expecting the mentions of women to be more superficial than men 
+  - for instance, focusing more on women's looks or mentioning them in relation to someone else
+- good tool for making comparisons between text (different genres, time periods, topics, etc.)
+- next time, I would use this tool on a more specific set of texts so that it is easier to ask questions about the patterns that appear
+- word frequency list
+- how do you know if your explanation/conclusion is the correct one? must try to find other reasons or compare to a reference corpus or compare to other instances of the word/phrase within the same corpus (for example look* a little and look a little in https://datasittersclub.github.io/site/dsc4/)
+- interesting to see how you can use AntConc with OpenRefine
+- things surrounding the word that can change it's meaning
+- context around the word--when is it used? who says/writes it?
+- using tags
+
