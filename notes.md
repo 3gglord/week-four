@@ -22,7 +22,7 @@
 - word "mr" is mentioned often, so mostly writing about men
 - clicking on multiple terms plots those terms on the graph
 - used [this video]() to learn how to embedd html in github
-[posted my embedded visualizatons here](https://paula-rodrigo.github.io/week-four/)
+- [posted my embedded visualizatons here](https://paula-rodrigo.github.io/week-four/)
 - found it difficult to interpret patters when I do not have an idea in mind
 - 
 
