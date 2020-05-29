@@ -56,7 +56,9 @@
 - decide what to name the topics
 - the way the documents are divided up
   - could have divided by date or publisher or writer
-
+- error message
+- error message 
+https://github.com/kbroman/RqtlWorkshop/issues/1
 
 ## bonus activity
 
