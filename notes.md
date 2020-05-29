@@ -27,6 +27,7 @@
 - I thought that the dreamscape visualization was interesting because it broadly showed what places newspapers were writing about
   - many reports about Quebec, and America in the Northeast
   - TermBerries visualizaiton shows words that appear near each other and how often they occur (ex. Canada and war)
+ - not sure when to stop looking
   
 
 ## AntConc
@@ -47,4 +48,15 @@
 - things surrounding the word that can change it's meaning
 - context around the word--when is it used? who says/writes it?
 - using tags
+- how do we know when to stop?
+
+## Topic Models
+- error
+- choose the number of topics
+- decide what to name the topics
+- the way the documents are divided up
+  - could have divided by date or publisher or writer
+
+
+## bonus activity
 
