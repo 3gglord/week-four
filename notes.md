@@ -49,6 +49,8 @@
 - context around the word--when is it used? who says/writes it?
 - using tags
 - how do we know when to stop?
+### create your own corpus
+- looking for the word "alligator" in the front page of Louisiana newspapers
 
 ## Topic Models
 - error
