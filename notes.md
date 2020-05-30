@@ -51,6 +51,29 @@
 - how do we know when to stop?
 ### create your own corpus
 - looking for the word "alligator" in the front page of Louisiana newspapers
+- API method
+- went back to my week two repo to see what the process was like of using APIs--the first time that I went back to use my notes from a previous week
+  - now I see why taking notes as I go is important
+- https://realpython.com/invalid-syntax-python/
+- only got about 20 articles from the API search
+- figured out that using this link: https://chroniclingamerica.loc.gov/search/pages/results/list/?date1=1789&rows=648&searchType=basic&sequence=1&state=Louisiana&date2=1963&proxtext=alligator&y=0&x=0&dateFilterType=yearRange&page=1&sort=relevance will show all 648 results
+- using the other method that Dr. Graham suggested on Discord could be used to get all of the results
+- created the spreadsheet manually with the 20 or so links that I had
+  - not sure how this would be done if I had a corpus with all of the results
+  - is there a way to open the links and extract the text using code?
+- expecting the term to accompany words like "attack" 
+  - appeared near words like "baby" and "monster" -- unsurprising and goes with my previous assumptions
+  - surprised to see the term "leather" 
+
+<iframe style='width: 796px; height: 343px;' src='https://voyant-tools.org/tool/WordTree/?query=alligator&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
+
+<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/Phrases/?query=alligator*&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
+
+<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/Contexts/?query=alligator*&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
+
+<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/Trends/?query=baby*&query=leather*&query=alligator*&mode=document&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
+
+<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?context=19&query=alligator*&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
 
 ## Topic Models
 - error
