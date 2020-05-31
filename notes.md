@@ -61,8 +61,8 @@
 - the paterns that come up may take a long time to go through as well
 - followed [the tutorial](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc) instructions
   - searching for "the" ![antconc-the-search](antconc-the-search.png)
-  - searching and sorting "wom?n" ![antconc-women/woman-sort](antconc-women/woman-sort.png)
-  - searching and sorting "m?n" ![antconc-men/man-sort](antconc-men/man-sort.png)
+  - searching and sorting "wom?n" ![antconc-womenwoman-sort](antconc-womenwoman-sort.png)
+  - searching and sorting "m?n" ![antconc-menman-sort](antconc-menman-sort.png)
   - searching "she|he" ![antconc-she|he-search](antconc-she|he-search.png)
 - How people write in chapbooks about women compared to men? 
 - What kind of writing do chapbooks produce about women?
