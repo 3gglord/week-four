@@ -111,4 +111,4 @@ Results:
 - could compare and contrast these results with other publications that had similar audiences from the time 
 - average colour: ![average-colour-barcode](average-colour-barcode.png)
 - dominant colour: ![dominant-colour-barcode](dominant-colour-barcode.png)
-- plotting with brightness on the x-axis and hue on the y-axis shows that most covers use either red or blue: ![brightness/hue](brightness/hue.png)
+- plotting with brightness on the x-axis and hue on the y-axis shows that most covers use either red or blue: ![brightness:hue](brightness:hue.png)
