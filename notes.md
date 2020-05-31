@@ -41,7 +41,7 @@
 - API method
 - went back to my week two repo to see what the process was like of using APIs--the first time that I went back to use my notes from a previous week
   - now I see why taking notes as I go is important
-- when I tried to run the code, I got this error: ![python-syntax-error](python-syntax-error.png)
+- when I tried to run the code, I got this error: ![python-error-syntax](python-error-syntax.png)
 - used [this link](https://realpython.com/invalid-syntax-python/) to find the solution (add commas to separate the lines)
 - only got about 20 articles from the API search
 - figured out that using this link: https://chroniclingamerica.loc.gov/search/pages/results/list/?date1=1789&rows=648&searchType=basic&sequence=1&state=Louisiana&date2=1963&proxtext=alligator&y=0&x=0&dateFilterType=yearRange&page=1&sort=relevance will show all 648 results
@@ -60,8 +60,11 @@
 - I can imagine how the process can take a long time because researchers have to clearn the OCR'd text and then select which files they're going to examine 
 - the paterns that come up may take a long time to go through as well
 - followed [the tutorial](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc) instructions
-  - 
-- How do the chapbooks write about women compared to men? 
+  - searching for "the" ![antconc-the-search](antconc-the-search.png)
+  - searching and sorting "wom?n" ![antconc-wom?n-sort](antconc-wom?n-sort.png)
+  - searching and sorting "m?n" ![antconc-m?n-sort](antconc-m?n-sort.png)
+  - searching "she|he" ![antconc-she|he-search](antconc-she|he-search.png)
+- How people write in chapbooks about women compared to men? 
 - What kind of writing do chapbooks produce about women?
 - expecting there to be less mention of women than men, expecting the mentions of women to be more superficial than men 
   - for instance, focusing more on women's looks or mentioning them in relation to someone else
@@ -97,6 +100,15 @@ Results:
 - 5 topic models, topics over time ![5-topic-models-over-time-R](5-topic-models-over-time-R.png)
 - 20 topic models ![20-topic-models-R](20-topic-models-R.png)
 - 20 topic models, topics over time ![topics-over-time-20-R](topics-over-time-20-R.png)
+- using less topic models is better for a reading that is more distant; only shows the broader topics that are more common
+- using more topic models is good for doing a closer reading of the texts
 
-## bonus activity
-
+## bonus activity: Image Analysis
+- refreshing to not be working with text
+- I think this could be used for other disciplines, not just for digital history (as with a lot of these visualization and modeling techniques)
+- I liked the barcodes that showed the dominant and average colours
+- could give information about the ink used or the colours that were marketable for that kind of publication (more muted colours, maybe an audience of more mature people or men)
+- could compare and contrast these results with other publications that had similar audiences from the time 
+- average colour: ![average-colour-barcode](average-colour-barcode.png)
+- dominant colour: ![dominant-colour-barcode](dominant-colour-barcode.png)
+- plotting with brightness on the x-axis and hue on the y-axis shows that most covers use either red or blue: ![brightness/hue](brightness/hue.png)
