@@ -52,6 +52,7 @@
 - expecting the term to accompany words like "attack" 
   - appeared near words like "baby" and "monster" -- unsurprising and goes with my previous assumptions; also results for alligator hunters
   - surprised to see the term "leather" -- realized that there was a market for alligator leather products, like bags; the "hunters" that related to the term "alligator" could have also been hunting for leather
+- again, click [here](https://paula-rodrigo.github.io/week-four/) for the embedded visualizations
 
 ## AntConc
 - corpus constrution: questions of sampling, representiveness, and organization
