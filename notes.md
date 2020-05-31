@@ -1,12 +1,19 @@
 # Week Four notes
 ## Excel and R
-- https://www.youtube.com/watch?v=Cmd8cJCk2lA
-- https://www.dummies.com/programming/r/how-to-substitute-text-in-r/
-- https://stackoverflow.com/questions/21187603/replace-characters-from-a-column-of-a-data-frame-r
+- I have used Excel before, but the introduction was a nice refresher
+- bar graphs in R: 
+  - article types ![article-types](article-types.png)
+  - newspaper titles ![newspaper-titles](newspaper-titles.png)
+  - publication year ![publication-year](publication-year.png)
+- used [this YouTube video](https://www.youtube.com/watch?v=Cmd8cJCk2lA) but got an error message:
+![R-replace-error](R-replace-error.png)
+- found [these](https://www.dummies.com/programming/r/how-to-substitute-text-in-r/) [links](https://stackoverflow.com/questions/21187603/replace-characters-from-a-column-of-a-data-frame-r) to change the misspelling in the data
 - worked to replace it! used `documents$Newspaper.City <- gsub("Edinbugh", "Edinburgh", documents$Newspaper.City)`
-
-- [other basic visualizations](https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html)
-- https://ourworldindata.org/world-population-growth#all-charts-preview
+### [other basic visualizations](https://rstudio-pubs-static.s3.amazonaws.com/7953_4e3efd5b9415444ca065b1167862c349.html)
+- did the first three visualizations
+- scatterplot with tarsus data: ![tarsus-weight-length](tarsus-weight-length.png)
+- histogram with unicord data: ![unicorn-birth-weight](unicorn-birth-weight.png)
+- line graph with regression with moomin data (used [this data](https://ourworldindata.org/world-population-growth#all-charts-preview): ![moomin-population-size](moomin-population-size.png)
 
 ## Voyant
 - questions to ask before exploring the data:
@@ -21,6 +28,7 @@
 - the word "new" increases as time goes on, it is also the most frequent word
 - word "mr" is mentioned often, so mostly writing about men
 - clicking on multiple terms plots those terms on the graph
+- putting `*` at the end of a term searches for variations of the word (ex. America* will yeild results for "America", "Americans", and "Americas")
 - used [this video](https://www.youtube.com/watch?v=enjhlnqaXOE) to learn how to embedd html in github
 - [posted my embedded visualizatons here](https://paula-rodrigo.github.io/week-four/)
 - found it difficult to interpret patters when I don't have a specific idea in mind or argument
@@ -28,14 +36,31 @@
   - many reports about Quebec, and America in the Northeast
   - TermBerries visualizaiton shows words that appear near each other and how often they occur (ex. Canada and war)
  - not sure when to stop looking
-  
+ ### create your own corpus
+- looking for the word "alligator" in the front page of Louisiana newspapers
+- API method
+- went back to my week two repo to see what the process was like of using APIs--the first time that I went back to use my notes from a previous week
+  - now I see why taking notes as I go is important
+- when I tried to run the code, I got this error: ![python-syntax-error](python-syntax-error.png)
+- used [this link](https://realpython.com/invalid-syntax-python/) to find the solution (add commas to separate the lines)
+- only got about 20 articles from the API search
+- figured out that using this link: https://chroniclingamerica.loc.gov/search/pages/results/list/?date1=1789&rows=648&searchType=basic&sequence=1&state=Louisiana&date2=1963&proxtext=alligator&y=0&x=0&dateFilterType=yearRange&page=1&sort=relevance will show all 648 results
+- using this method could be used to get all of the results: ![alternate-corpus-method](alternate-corpus-method.png)
+- created the spreadsheet manually with the 20 or so links that I had
+  - not sure how this would be done if I had a corpus with all of the results
+  - is there a way to open the links and extract the text using code?
+- expecting the term to accompany words like "attack" 
+  - appeared near words like "baby" and "monster" -- unsurprising and goes with my previous assumptions; also results for alligator hunters
+  - surprised to see the term "leather" -- realized that there was a market for alligator leather products, like bags; the "hunters" that related to the term "alligator" could have also been hunting for leather
 
 ## AntConc
 - corpus constrution: questions of sampling, representiveness, and organization
 - I really like the Collocate feature
-- allows for a far reading before looking at the words in context
+  - allows for a far reading before looking at the words in context
 - I can imagine how the process can take a long time because researchers have to clearn the OCR'd text and then select which files they're going to examine 
 - the paterns that come up may take a long time to go through as well
+- followed [the tutorial](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc) instructions
+  - 
 - How do the chapbooks write about women compared to men? 
 - What kind of writing do chapbooks produce about women?
 - expecting there to be less mention of women than men, expecting the mentions of women to be more superficial than men 
@@ -43,47 +68,35 @@
 - good tool for making comparisons between text (different genres, time periods, topics, etc.)
 - next time, I would use this tool on a more specific set of texts so that it is easier to ask questions about the patterns that appear
 - word frequency list
-- how do you know if your explanation/conclusion is the correct one? must try to find other reasons or compare to a reference corpus or compare to other instances of the word/phrase within the same corpus (for example look* a little and look a little in https://datasittersclub.github.io/site/dsc4/)
+- how do you know if your explanation/conclusion is the correct one? must try to find other reasons or compare to a reference corpus or compare to other instances of the word/phrase within the same corpus (for example, look* a little and look a little in https://datasittersclub.github.io/site/dsc4/)
 - interesting to see how you can use AntConc with OpenRefine
 - things surrounding the word that can change it's meaning
 - context around the word--when is it used? who says/writes it?
 - using tags
 - how do we know when to stop?
-### create your own corpus
-- looking for the word "alligator" in the front page of Louisiana newspapers
-- API method
-- went back to my week two repo to see what the process was like of using APIs--the first time that I went back to use my notes from a previous week
-  - now I see why taking notes as I go is important
-- https://realpython.com/invalid-syntax-python/
-- only got about 20 articles from the API search
-- figured out that using this link: https://chroniclingamerica.loc.gov/search/pages/results/list/?date1=1789&rows=648&searchType=basic&sequence=1&state=Louisiana&date2=1963&proxtext=alligator&y=0&x=0&dateFilterType=yearRange&page=1&sort=relevance will show all 648 results
-- using the other method that Dr. Graham suggested on Discord could be used to get all of the results
-- created the spreadsheet manually with the 20 or so links that I had
-  - not sure how this would be done if I had a corpus with all of the results
-  - is there a way to open the links and extract the text using code?
-- expecting the term to accompany words like "attack" 
-  - appeared near words like "baby" and "monster" -- unsurprising and goes with my previous assumptions
-  - surprised to see the term "leather" 
-
-<iframe style='width: 796px; height: 343px;' src='https://voyant-tools.org/tool/WordTree/?query=alligator&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
-
-<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/Phrases/?query=alligator*&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
-
-<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/Contexts/?query=alligator*&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
-
-<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/Trends/?query=baby*&query=leather*&query=alligator*&mode=document&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
-
-<iframe style='width: 559px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?context=19&query=alligator*&corpus=5f4b03ddf2d6204a35f308fcad4717cc'></iframe>
 
 ## Topic Models
-- error
+- error intalling: ![dmg-error](dmg-error.png)
+  - Dr. Graham solved the issue by going back into the repository to see if anyone had forked (copied) earlier verisons of the code, where I was able to get a working download link
 - choose the number of topics
 - decide what to name the topics
 - the way the documents are divided up
   - could have divided by date or publisher or writer
-- error message
-- error message 
-https://github.com/kbroman/RqtlWorkshop/issues/1
+### Topic modeling with R
+- error message running the code: ![R-no-package-error](R-no-package-error.png)
+- saw that someone on Discord had the same problem, and the solution was just to install the missing package `install.packages('tm')`. the same solution was posted on [this website](https://github.com/kbroman/RqtlWorkshop/issues/1
+) when I looked up the error
+- I got a similar error message again later on: ![R-no-package-error-2](R-no-package-error-2.png)
+  - used the same solution: `install.packages('topicmodels')` which worked!
+- liked using R better because I find code easier to follow along and I can see all of the components going into what is going into creating the model, even if I cannot understand every part of the code
+
+Results:
+- 15 topic models ![chapbooks-topic-model-R](chapbooks-topic-model-R.png)
+- 15 topic models, topics over time ![chapbooks-topics-over-time-R](chapbooks-topics-over-time-R.png)
+- 5 topic models ![5-topic-models-R](5-topic-models-R.png)
+- 5 topic models, topics over time ![5-topic-models-over-time-R](5-topic-models-over-time-R.png)
+- 20 topic models ![20-topic-models-R](20-topic-models-R.png)
+- 20 topic models, topics over time ![topics-over-time-20-R](topics-over-time-20-R.png)
 
 ## bonus activity
 
